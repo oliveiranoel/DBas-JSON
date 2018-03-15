@@ -1,0 +1,21 @@
+CREATE DATABASE IF NOT EXISTS carsdb;
+
+use carsdb;
+
+CREATE TABLE cars (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	marke VARCHAR(80),
+	modell VARCHAR(80),
+	aufbau VARCHAR(80),
+	km INT,
+	hubraum INT,
+	ps INT,
+	preis INT
+);
+
+INSERT INTO cars (marke, modell, aufbau, km, hubraum, ps, preis)
+VALUES ("VW", "Polo GTI", "Kleinwagen", 1000, 1800, 192, 25000),
+		("BMW", "120d", "Limousine", 60000, 2000, 184, 18500),
+		("Lamborghini", "Aventador", "Sportwagen", 1, 6500, 700, 350000),
+		("Porsche", "918 Spyder", "Sportwagen", 10, 4600, 886, 1500000)
+		;
